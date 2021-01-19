@@ -12,6 +12,7 @@ let questionNumber = -1;
 // start-button 
 document.querySelector("#start-button").addEventListener("click", startQuiz);
 
+// Question array
 const questionsArr = [
     {
         question: "How do you add fles on github?",
@@ -40,7 +41,7 @@ const questionsArr = [
     },
 ];
 
-
+// Start quiz.  Remove intro and add quiz
 function startQuiz(){
 document.getElementById("intro-quiz").classList.add('hidden');
 document.getElementById("start-quiz").classList.remove("hidden");
@@ -50,6 +51,7 @@ countDown ();
 questionInit();
 };
 
+//  Sets timer and function for count down.
 function countDown(){
 let secondsLeft = setInterval(function(){
     timeScore --;
@@ -61,6 +63,7 @@ let secondsLeft = setInterval(function(){
 }, 1000);
 };
 
+//  Cycles through the questions array
 function questionInit(){
 
     questionNumber++
@@ -87,7 +90,7 @@ function hideSelections (){
     resultEl.style.display = "none";
 }
 
-
+//  On click, either correct and move on, or wrong -10 seconds then move on
 selectionsEl.addEventListener("click", function(event){
     if (answer === event.target.textContent){
         resultEl.textContent = "CORRECT!"
@@ -102,6 +105,7 @@ selectionsEl.addEventListener("click", function(event){
     questionInit();
 })
 
+//  Post final score--still working on this, cant get it to display
 const finalScore = () => {
     document.getElementById("start-quiz").classList.add("hidden");
     document.getElementById("final-score").classList.remove("hidden");
