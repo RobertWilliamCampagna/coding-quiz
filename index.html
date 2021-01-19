@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roberts Brain Buster</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    
+    <header>
+        <h2 class="title" id="quiz-intro">Roberts Brain Buster!</h2>
+    </header>
+
+    <!-- Displays high score and time left on page -->
+    <section class="tally">
+        <container id="highscores">View High Score</container>
+        <container id="timeleft">Time: 60 Seconds</container>
+    </section>
+
+    <!-- Start of quiz -->
+    <section  class="intro-container" id="intro-quiz">
+        <h1>Introduction to quiz</h1>
+        <button id="start-button">Start Quiz</button>
+    </section>
+
+    <!--  Section for quiz questions and answers  -->
+    <section class="hidden" id="start-quiz">
+        <h3 id="quiz-questions">Questions</h3>
+        <div id="selections"></div>
+        <p id="result"></p>
+    </section>
+
+    <!-- <p id="result"></p> -->
+    
+    <section class="hidden" id="final-score">
+       
+    </section>
+
+
+    <script src="assets/script.js"></script>
+</body>
+</html>

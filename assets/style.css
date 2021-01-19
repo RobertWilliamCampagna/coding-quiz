@@ -1,0 +1,26 @@
+.title {
+    color: blue;
+    text-align: center;
+}
+
+.intro-container {
+    padding: 30px;
+    text-align: center;
+    border: 5px;
+    background-color: blue;
+}
+
+.intro-container h1{
+    color: cornsilk;
+}
+
+.tally{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+.hidden {
+    display: none;
+}
