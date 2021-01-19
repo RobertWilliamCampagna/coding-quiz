@@ -7,3 +7,5 @@ This Code Quiz is a timed multiple choice quiz using HTML CSS and JavaScript.  C
 RULES of THE QUIZ:  60 seconds to answer five multiple choice questions.  If you answer correct, you will be notified and the next question will appear.  If you answer wrong you will be notified and will recieve a ten second run-off penalty.<br>
 
 ENJOY!<br>
+
+<img src="https://i.imgur.com/aBM6Hj7.png">
